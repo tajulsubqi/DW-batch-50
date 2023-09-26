@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,700;1,300&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="/css/contact.css" />
+    <link rel="stylesheet" href="/css/navbar.css" />
+  </head>
+  <body>
+    <!-- Navbar start -->
+    <nav>
+      <div class="nav-left">
+        <img src="/img/icon.ico" alt="icon" />
+        <ul>
+          <li>
+            <a href="/html/index.html">Home</a>
+          </li>
+          <li>
+            <a href="">My Project</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav-rigth">
+        <button>contact</button>
+      </div>
+    </nav>
+    <!-- Navbar end -->
+
+    <!-- Form contact -->
+    <section class="container">
+      <h1 class="tittle">Get In <span>Touch</span></h1>
+      <form>
+        <div>
+          <label for="name">Name</label>
+          <input id="name" type="text" />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input id="email" type="email" />
+        </div>
+        <div>
+          <label for="phone">Phone Number</label>
+          <input id="phone" type="text" />
+        </div>
+        <div>
+          <label for="subject">Subject</label>
+          <select id="subject">
+            <option value="">Frontend Developer</option>
+            <option value="">backend Developer</option>
+            <option value="">Fullstack Developer</option>
+          </select>
+        </div>
+        <div>
+          <label for="message">Your Message</label>
+          <textarea id="message"></textarea>
+        </div>
+        <button>Submit</button>
+      </form>
+    </section>
+  </body>
+</html>

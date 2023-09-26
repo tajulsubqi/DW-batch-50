@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  background-color: #ddd;
+}
+
+.container {
+  width: 700px;
+  background-color: #fff;
+  margin: 7rem auto 3rem;
+  padding: 2rem 4rem 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  display: flex;
+}
+
+.container .hero {
+  width: 80%;
+  padding-right: 3rem;
+}
+
+.container .hero h1 {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+.container .hero  span {
+  color: orangered;
+}
+
+.container .hero p {
+  font-size: 1rem;
+  line-height: 1.4;
+  margin-top: 1rem;
+}
+
+.container .hero .btn {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  background-color: orangered;
+  color: #fff;
+  padding: 0.2rem 0.5rem;
+  border: 1px solid #666;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.container .hero .btn:hover {
+  background-color: orange;
+  color: black;
+}
+
+.container .hero a {
+  color: #000;
+  transition: .3s;
+  display: inline-block;
+}
+
+.container .hero a:hover {
+  color: orangered;
+  transform: scale(1.1);
+}
+
+.container .hero .socials {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.container .hero .socials a {
+  padding: 0.5rem;
+  font-size: 1.6rem;
+  border-radius: 50%;
+}
+
+.card-content {
+  width: 250px;
+  background-color: #fff;
+  margin: 2rem 0;
+  padding: 0.3rem;
+  border-radius: 10px;
+  box-shadow: 0 0 3px #666;
+}
+
+
+.card-content img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-content h3,
+.card-content p {
+  text-align: center;
+  margin-top: .5rem;
+}
+
+.card-content p {
+  padding-bottom: .8rem;
+  font-size: .8rem;
+  font-weight: bold;
+}
