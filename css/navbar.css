@@ -6,17 +6,19 @@
 }
 
 nav {
+  height: 55px;
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
+  z-index: 999;
   font-size: 1.1rem;
   font-weight: 700;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #bbbb;
-  padding: 0 40px;
+  padding: 0 50px;
   border-bottom: 1px solid orangered;
 }
 
@@ -28,7 +30,7 @@ nav {
 }
 
 .nav-left img {
-  width: 60px;
+  width: 45px;
 }
 
 .nav-left a {

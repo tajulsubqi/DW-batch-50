@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image" href="/img/red bull ico.png">
     <title>Contact</title>
+
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,19 +18,19 @@
     <!-- Navbar start -->
     <nav>
       <div class="nav-left">
-        <img src="/img/icon.ico" alt="icon" />
+        <img src="/img/red bull ico.png" alt="icon" />
         <ul>
           <li>
             <a href="/html/index.html">Home</a>
           </li>
           <li>
-            <a href="">My Project</a>
+            <a href="/html/project.html">My Project</a>
           </li>
         </ul>
       </div>
 
       <div class="nav-rigth">
-        <button>contact</button>
+        <a href="/html/contact.html"><button>contact</button></a>
       </div>
     </nav>
     <!-- Navbar end -->
@@ -39,19 +41,20 @@
       <form>
         <div>
           <label for="name">Name</label>
-          <input id="name" type="text" />
+          <input id="name" type="text" placeholder="enter your name" />
         </div>
         <div>
           <label for="email">Email</label>
-          <input id="email" type="email" />
+          <input id="email" type="email" placeholder="enter your email" />
         </div>
         <div>
           <label for="phone">Phone Number</label>
-          <input id="phone" type="text" />
+          <input id="phone" type="number" placeholder="enter your phone  number" />
         </div>
         <div>
           <label for="subject">Subject</label>
           <select id="subject">
+            <option value="" hidden></option>
             <option value="">Frontend Developer</option>
             <option value="">backend Developer</option>
             <option value="">Fullstack Developer</option>
@@ -59,10 +62,12 @@
         </div>
         <div>
           <label for="message">Your Message</label>
-          <textarea id="message"></textarea>
+          <textarea id="message" placeholder="enter your message"></textarea>
         </div>
-        <button>Submit</button>
+        <button type="button" onclick="getData()">submit</button>
       </form>
     </section>
+
+    <script src="/js/contact.js"></script>
   </body>
 </html>

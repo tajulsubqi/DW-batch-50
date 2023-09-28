@@ -1,0 +1,68 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  background-color: #ddd;
+  font-family: "poppins", sans-serif;
+  font-size: 1rem;
+}
+
+.container {
+  width: 900px;
+  padding: 3rem 4rem;
+  background-color: #fff;
+  margin: 7rem auto 3rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.container h1 span {
+  color: orangered;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  line-height: 2rem;
+}
+
+.row .tech  {
+  margin-top: 2rem;
+}
+
+.content .img {
+  width: 60%;
+}
+
+.content img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+
+.content .row {
+  width: 33%;
+}
+
+.technologies {
+  display: flex;
+  gap: 2rem;
+}
+
+.hero {
+  margin-top: 3rem;
+}
+
+.hero p {
+  margin-top: .5rem;
+}

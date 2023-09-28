@@ -30,7 +30,7 @@ body {
   margin-top: 1rem;
 }
 
-.container .hero  span {
+.container .hero span {
   color: orangered;
 }
 
@@ -58,6 +58,8 @@ body {
 }
 
 .container .hero a {
+  font-size: .8rem;
+  font-style: italic;
   color: #000;
   transition: .3s;
   display: inline-block;
@@ -76,7 +78,6 @@ body {
 .container .hero .socials a {
   padding: 0.5rem;
   font-size: 1.6rem;
-  border-radius: 50%;
 }
 
 .card-content {
