@@ -87,7 +87,7 @@ form textarea {
 }
 
 .tech input {
-  width: 20px;
+  width: 15px;
   cursor: pointer;
 }
 
@@ -95,10 +95,53 @@ form textarea {
   outline: none;
 }
 
-.upload-image input {
+/* .upload-image input {
   color: #666;
   cursor: pointer;
+} */
+
+form .input-project-image-group {
+  width: 100%;
+  border-radius: 5px;
+  background-color: #fefefe;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
+form .input-project-image-group label p {
+  font-size: 13px;
+  background-color: #dbdbdb;
+  border-radius: 5px;
+  padding: 10px;
+  color: #000;
+  text-shadow: 0 0 3px #fff;
+  font-style: italic;
+  transition: .3s;
+}
+
+form .input-project-image-group label p:hover {
+  color: orangered;
+}
+
+form .input-project-image-group img {
+  height: 22px;
+  width: 17px;
+  padding: 0 7px;
+  display: inline;
+  transition: .2s;
+}
+
+form .input-project-image-group img:hover {
+  transform: scale(1.2);
+}
+
+form .input-project-image-group label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
 
 form button {
   background-color: orangered;
@@ -106,7 +149,7 @@ form button {
   font-size: 1rem;
   border: 1px solid #666;
   padding: 3px 10px;
-  margin-top: .7rem;
+  margin-top: 1.6rem;
   border-radius: 6px;
   transition: .3s;
   cursor: pointer;
@@ -131,12 +174,11 @@ form button:hover {
   margin: 5rem auto 0;
   padding: 3rem 3rem 5rem;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-
 }
 
 .card-container h1 {
   text-align: center;
-  margin: 1rem 0 2rem;
+  margin: 1rem 0 4rem;
   font-size: 2rem;
 }
 
@@ -148,7 +190,7 @@ form button:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 3rem;
+  gap: 3.5rem;
 }
 
 .card-item {
@@ -164,16 +206,29 @@ form button:hover {
   width: 100%;
   object-fit: cover;
   border-radius: 10px 10px 0 0;
+  aspect-ratio: 4/3;
 }
 
-.card-item h2 {
-  font-size: 1.1rem;
+.card-item h2 a {
+  font-size: 1rem;
+  color: #000;
+  transition: .2s;
+}
+
+.card-item h2 a:hover {
+  color: orangered;
 }
 
 .card-item span {
   font-weight: 400;
-  font-size: .8rem;
   color: #666;
+  font-size: 11px;
+}
+
+.card-item p .durasi {
+  font-weight: 400;
+  color: #666;
+  font-size: 11px;
 }
 
 .card-item p {
@@ -186,7 +241,7 @@ form button:hover {
 }
 
 .card-item .icon a {
-  margin-right: 12px;
+  margin-right: 5px;
   font-size: 1.3rem;
   color: #000;
   transition: .3s;

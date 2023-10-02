@@ -41,13 +41,17 @@ nav {
   padding-bottom: 2px;
 }
 
-.nav-left a:hover{
+.nav-left a:hover {
   color: orangered;
   border-bottom: 1px solid orangered;
   transform: scale(1.1);
 }
 
-
+.nav-rigth {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
 
 .nav-rigth button {
   font-size: 1.1rem;
@@ -63,4 +67,67 @@ nav {
 .nav-rigth button:hover {
   color: #000;
   background-color: orange;
+}
+
+
+/* darkmode */
+.nav-rigth .btn {
+  box-sizing: border-box;
+  background-color: #9e9d9d;
+  padding: 0 5px;
+  width: 3.6rem;
+  height: 1.6rem;
+  border-radius: 10em;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 1);
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.nav-rigth .btn-indicator {
+  background-color: #fff;
+  width: 1.3rem;
+  height: 1.3rem;
+  border-radius: 50%;
+  position: absolute;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, .2);
+  transition: transform .3s ease;
+}
+
+.nav-rigth .btn-icon-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-rigth .btn-icon {
+  text-shadow: 0 0 1px black;
+  color: yellow;
+  font-size: 1rem;
+}
+
+/* --- animation --- */
+.nav-rigth .btn-icon.animated {
+  animation: spin 0.5s;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg)
+  }
+}
+
+/* --- animation end --- */
+
+.darkmode .btn-indicator {
+  transform: translateX(1.7rem);
+  background-color: #000;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, .3);
+}
+
+.darkmode .btn-icon {
+  color: #fff;
 }

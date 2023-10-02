@@ -10,6 +10,13 @@ body {
   background-color: #ddd;
 }
 
+/* darkmode */
+body.darkmode {
+  background-color: #000;
+}
+
+/* darkmode end */
+
 .container {
   width: 700px;
   background-color: #fff;
