@@ -31,6 +31,29 @@ submitData = (e) => {
     return alert("End date should be greater than start date");
   }
 
+  // duration
+  let waktu = end.getTime() - start.getTime();
+  let hari = waktu / (1000 * 3600 * 24);
+  let minggu = Math.floor(hari / 7);
+  let bulan = Math.floor(minggu / 4);
+  let tahun = Math.floor(bulan / 12);
+
+  if (hari > 0) {
+    durasi = hari + " hari";
+  }
+  if (minggu > 0) {
+    durasi = minggu + " minggu";
+  }
+  if (bulan > 0) {
+    durasi = bulan + " bulan";
+  }
+  if (tahun > 0) {
+    durasi = tahun + " tahun";
+  }
+
+  console.log("Durasi: " + durasi);
+
+  
   const nodeJsIcon = '<i class="fa-brands fa-node-js"></i>';
   const golangIcon = '<i class="fa-brands fa-golang"></i>';
   const reactIcon = '<i class="fa-brands fa-react"></i>';
@@ -49,8 +72,7 @@ submitData = (e) => {
 
   let object = {
     project,
-    startDate,
-    endDate,
+    durasi,
     description,
     image,
     nodeJs,
@@ -76,7 +98,7 @@ renderBlog = () => {
         <img src="${data[i].image}" alt="card-image" />
       </div>
       <h2><a href="/html/project-detail.html">${data[i].project}</a></h2>
-      <span style="font-size: 8px;">mulai ${data[i].startDate} s/d ${data[i].endDate}</span>
+      <span>Durasi : ${data[i].durasi}</span>
       <p>${data[i].description}</p>
 
       <div class="icon">    

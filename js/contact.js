@@ -6,16 +6,6 @@ getData = () => {
   const subject = document.querySelector("#subject").value;
   const message = document.querySelector("#message").value;
 
-  let data = {
-    name,
-    email,
-    phone,
-    subject,
-    message,
-  };
-
-  console.log(data);
-
   // data validation
   if (name == "") {
     return alert("Your name has not been entered!");
@@ -29,9 +19,20 @@ getData = () => {
     return alert("Your message has not been entered!");
   }
 
+  let data = {
+    name,
+    email,
+    phone,
+    subject,
+    message,
+  };
+
+  console.log(data);
+
   // execute to email
   // const emailReceiver = "hi.tajulsubqi7@gmail.com";
   let a = document.createElement("a");
   a.href = `mailto:${email}?subject=${subject}&body= Halo nama saya ${name}, bisakah anda menghubungi saya di kontak ${phone}, untuk membahas project ${message}`;
   a.click();
 };
+
