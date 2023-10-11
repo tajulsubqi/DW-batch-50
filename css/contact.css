@@ -6,12 +6,18 @@
 body {
   font-family: 'Poppins', sans-serif;
   font-size: 1rem;
-  background-color: #ddd;
+  background-color: #f9f5f2;
+  color: #eee;
+  background: url(/img/bg.jpg);
 }
+
+/* #5e7c60 */
+/* #f9f5f2 */
+
 
 .container {
   width: 500px;
-  background-color: #fff;
+  background-color: #5e7c60;
   margin: 7rem auto;
   padding: 3rem 3rem 5rem;
   border-radius: 10px;
@@ -19,17 +25,20 @@ body {
 }
 
 .container h1 {
+  color: #000;
+  text-shadow: 0 0 3px #fff;
   font-size: 2rem;
   text-align: center;
   margin-top: 1rem;
 }
 
 .container h1 span {
-  color: orangered;
+  color: #f9f5f2;
+  text-shadow: 0 0 10px purple;
 }
 
 form {
-  width: 70%;
+  width: 90%;
   margin: 1.5rem auto;
   position: relative;
 }
@@ -44,7 +53,8 @@ textarea {
   border-radius: 5px;
   background-color: #fefefe;
   border: 1px solid #ddd;
-  margin-top: 3px;
+  margin-top: 5px;
+  margin-bottom: .8rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   resize: none;
 }
@@ -61,6 +71,7 @@ form textarea {
 
 form label {
   font-weight: 700;
+  color: #f9f5f2;
 }
 
 form div {
@@ -84,4 +95,88 @@ form button {
 form button:hover {
   color: #000;
   background-color: orange;
+}
+
+/* media query */
+
+/* tablet */
+@media only screen and (max-width: 876px) {
+  body {
+    font-size: 1.2rem;
+  }
+
+  .container {
+    width: 600px;
+    margin: 7rem auto 0;
+    box-shadow: none;
+  }
+
+  .container h1 {
+    font-size: 2rem;
+    margin: -3rem 0 2rem;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  input,
+  select,
+  textarea {
+    font-size: 1.1rem;
+    padding: 15px;
+    margin-bottom: 2rem;
+  }
+
+  form textarea {
+    height: 10rem;
+  }
+
+  form button {
+    font-size: 1.3rem;
+    margin-top: -.1rem;
+  }
+}
+
+/* mobile */
+@media only screen and (max-width: 468px) {
+  body {
+    font-size: .8rem;
+    background: #5e7c60;
+  }
+
+  .container {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 5rem auto 2rem;
+    box-shadow: none;
+  }
+
+  .container h1 {
+    font-size: 1.5rem;
+    margin: .5rem 0 2rem;
+  }
+
+  form {
+    width: 90%;
+  }
+
+  input,
+  select,
+  textarea {
+    font-size: .8rem;
+    padding: 13px;
+    margin-bottom: 1rem;
+  }
+
+  form textarea {
+    height: 10rem;
+  }
+
+  form button {
+    margin-top: .5rem;
+    font-size: 1rem;
+  }
+
 }

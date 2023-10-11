@@ -26,8 +26,8 @@
   <body>
     <!-- Navbar start -->
     <nav>
+      <img src="/img/icon.ico" alt="icon" />
       <div class="nav-left">
-        <img src="/img/red bull ico.png" alt="icon" />
         <ul>
           <li>
             <a href="/html/index.html">Home</a>
@@ -35,11 +35,27 @@
           <li>
             <a href="/html/project.html">My Project</a>
           </li>
+          <li>
+            <a href="/html/testimonials.html">Testimonials</a>
+          </li>
         </ul>
+
+        <div class="nav-rigth">
+          <a href="/html/contact.html" class="btn-contact">contact</a>
+        </div>
       </div>
 
-      <div class="nav-rigth">
-        <a href="/html/contact.html"><button>contact</button></a>
+      <div class="bars-menu" id="bars-menu">
+        <button class="btn-bars-menu" id="bars-menu"><i class="fa-solid fa-bars"></i></button>
+      </div>
+
+      <div class="sidebar-menu">
+        <ul>
+          <li><a href="/html/index.html">Home</a></li>
+          <li><a href="/html/project.html">My Project</a></li>
+          <li><a href="/html/contact.html">Contact</a></li>
+          <li><a href="/html/testimonials.html">Testimonials</a></li>
+        </ul>
       </div>
     </nav>
     <!-- Navbar end -->
@@ -177,5 +193,6 @@
     </section>
     <!-- project detail end -->
     <script src="/js/project.js"></script>
+    <script src="/js/navbar.js"></script>
   </body>
 </html>

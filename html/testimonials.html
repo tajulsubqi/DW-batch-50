@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image" href="/img/red bull ico.png" />
-    <title>Contact</title>
+    <title>testimonials</title>
 
     <!-- icon -->
     <link
@@ -15,13 +15,9 @@
       referrerpolicy="no-referrer"
     />
 
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,700;1,300&display=swap" rel="stylesheet" />
-
-    <link rel="stylesheet" href="/css/contact.css" />
+    <link rel="stylesheet" href="/css/testimonials.css" />
     <link rel="stylesheet" href="/css/navbar.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
   </head>
   <body>
     <!-- Navbar start -->
@@ -60,40 +56,30 @@
     </nav>
     <!-- Navbar end -->
 
-    <!-- Form contact -->
-    <section class="container">
-      <h1 class="tittle">Get In <span>Touch</span></h1>
-      <form>
-        <div>
-          <label for="name">Name</label>
-          <input id="name" type="text" placeholder="enter your name" />
+    <div class="container">
+      <h1>My Testi<span>monials</span></h1>
+      <div class="container-rating">
+        <h2>Rating By Star</h2>
+        <div class="rating">
+          <button class="rating-btn" onclick="showTestimonial()">All</button>
+          <button class="rating-btn" onclick="filterTestimonials(1)">1 <i class="fa-solid fa-star"></i></button>
+          <button class="rating-btn" onclick="filterTestimonials(2)">2 <i class="fa-solid fa-star"></i></button>
+          <button class="rating-btn" onclick="filterTestimonials(3)">3 <i class="fa-solid fa-star"></i></button>
+          <button class="rating-btn" onclick="filterTestimonials(4)">4 <i class="fa-solid fa-star"></i></button>
+          <button class="rating-btn" onclick="filterTestimonials(5)">5 <i class="fa-solid fa-star"></i></button>
         </div>
-        <div>
-          <label for="email">Email</label>
-          <input id="email" type="email" placeholder="enter your email" />
-        </div>
-        <div>
-          <label for="phone">Phone Number</label>
-          <input id="phone" type="number" placeholder="enter your phone  number" />
-        </div>
-        <div>
-          <label for="subject">Subject</label>
-          <select id="subject">
-            <option value="" hidden></option>
-            <option value="Frontend Developer">Frontend Developer</option>
-            <option value="backend Developer">backend Developer</option>
-            <option value="Fullstack Developer">Fullstack Developer</option>
-          </select>
-        </div>
-        <div>
-          <label for="message">Your Message</label>
-          <textarea id="message" placeholder="enter your message"></textarea>
-        </div>
-        <button type="button" onclick="getData()">submit</button>
-      </form>
-    </section>
+      </div>
+      <section class="testimonials" id="testimonials">
+        <!-- <div class="testimonial">
+          <img src="assets/images/img.png" class="profile-testimonial" />
 
-    <script src="/js/contact.js"></script>
+          <p class="quote">"Etiam nec tincidunt erat. Sed faucibus convallis lectus vel porttitor. Fusce tristique dolor quis odio rhoncus laoreet."</p>
+          <p class="author">~ Ilham Fathullah</p>
+          <p class="rating"></p>
+        </div> -->
+      </section>
+    </div>
     <script src="/js/navbar.js"></script>
+    <script src="/js/testimonials.js"></script>
   </body>
 </html>

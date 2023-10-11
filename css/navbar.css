@@ -5,6 +5,9 @@
   list-style-type: none;
 }
 
+/* #5e7c60 */
+/* #f9f5f2 */
+
 nav {
   height: 55px;
   position: fixed;
@@ -17,23 +20,26 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #bbbb;
+  background-color: #e6e5e3;
   padding: 0 50px;
-  border-bottom: 1px solid orangered;
+  border-bottom: .1px solid orangered;
+}
+
+nav img {
+  width: 60px;
 }
 
 .nav-left,
 .nav-left ul {
-  gap: 2rem;
+  width: 90%;
+  justify-content: center;
+  gap: 3rem;
   display: flex;
   align-items: center;
 }
 
-.nav-left img {
-  width: 45px;
-}
 
-.nav-left a {
+.nav-left li a {
   color: #000;
   transition: .3s;
   border-bottom: 1px solid rgba(0, 0, 0, 0);
@@ -41,33 +47,117 @@ nav {
   padding-bottom: 2px;
 }
 
-.nav-left a:hover {
-  color: orangered;
-  border-bottom: 1px solid orangered;
+.nav-left li a:hover {
+  border-bottom: 1px solid orange;
   transform: scale(1.1);
 }
 
-.nav-rigth {
-  display: flex;
-  gap: 2rem;
-  align-items: center;
-}
-
-.nav-rigth button {
-  font-size: 1.1rem;
+.nav-rigth a {
+  font-size: 1rem;
   background-color: orangered;
   border: 1px solid #666;
   border-radius: 8px;
-  padding: 4px 8px;
+  padding: 3px 7px;
   color: #fff;
   transition: .3s;
   cursor: pointer;
 }
 
-.nav-rigth button:hover {
+.nav-rigth a:hover {
   color: #000;
   background-color: orange;
+  transform: none;
 }
+
+.bars-menu button {
+  background-color: #bbbbbb00;
+  color: #000000;
+  border: none;
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+
+.bars-menu{
+  display: none;
+}
+
+.sidebar-menu {
+  position: absolute;
+  right: -100%;
+}
+
+
+/* ====================================================================================== */
+
+/* media query */
+
+/* tablet */
+@media only screen and (max-width: 868px) {
+  nav img {
+    width: 50px;
+  }
+
+  nav .nav-left{
+    display: none;
+  }
+
+  .sidebar-menu {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #fff;
+    box-shadow: 0 0 7px grey;
+    width: 15rem;
+    height: 100vh;
+    transition: .4s;
+  }
+
+  .sidebar-menu.active {
+    right: 0;
+  }
+
+  .sidebar-menu li  {
+    margin: 1.5rem;
+    font-size: 1rem;
+  }
+  
+  .sidebar-menu li a {
+    color: #000;
+    transition: .3s ease-out;
+    display: inline-block;
+    border-bottom: 1px solid rgba(255, 68, 0, 0);
+    padding-bottom: 5px;
+  }
+  
+  .sidebar-menu li a:hover {
+    color: orangered;
+    transform: scale(1.1);
+    border-bottom: 1px solid rgb(255, 68, 0);
+  }
+  
+  .bars-menu {
+    display: block;
+  }
+}
+
+/* mobile */
+@media only screen and (max-width: 456px) {
+  .sidebar-menu {
+    width: 10rem;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* darkmode */

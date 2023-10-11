@@ -7,37 +7,60 @@
 body {
   font-family: 'Poppins', sans-serif;
   font-size: 1rem;
-  background-color: #ddd;
+  background-color: #f9f5f2;
+  background: url(/img/bg.jpg);
 }
 
+/* #5e7c60 */
+/* #f9f5f2 */
+
+
 .container {
-  width: 700px;
-  background-color: #fff;
-  margin: 7rem auto 3rem;
-  padding: 2rem 4rem 1rem;
+  background-color: #5e7c60;
+  max-width: 1000px;
+  margin: 8rem auto 0rem;
+  padding: 5rem 4rem 3rem;
   border-radius: 10px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   display: flex;
+  position: relative;
 }
 
 .container .hero {
   width: 80%;
-  padding-right: 3rem;
+  padding-right: 6rem;
+}
+
+.blur {
+  position: absolute;
+  box-shadow: 0 0 1000px 50px green;
+  z-index: -100;
 }
 
 .container .hero h1 {
-  font-size: 2rem;
+  font-size: 3rem;
+  line-height: 3.5rem;
   margin-top: 1rem;
+  text-shadow: 0 0 5px #f9f5f2;
 }
 
 .container .hero span {
-  color: orangered;
+  color: #f9f5f2;
+  transition: .3s;
+  text-shadow:  0 0 10px purple;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.container h1 span:hover {
+  transform: scale(1.1) translateY(-10px);
 }
 
 .container .hero p {
   font-size: 1rem;
   line-height: 1.4;
   margin-top: 1rem;
+  color: #eaeaea;
 }
 
 .container .hero .btn {
@@ -60,7 +83,7 @@ body {
 .container .hero a {
   font-size: .8rem;
   font-style: italic;
-  color: #000;
+  color: #eee;
   transition: .3s;
   display: inline-block;
 }
@@ -73,6 +96,7 @@ body {
 .container .hero .socials {
   margin-top: 4rem;
   text-align: center;
+  margin-left: 15rem;
 }
 
 .container .hero .socials a {
@@ -81,18 +105,18 @@ body {
 }
 
 .card-content {
-  width: 250px;
-  background-color: #fff;
-  margin: 2rem 0;
+  width: 280px;
+  height: 100%;
+  background-color: #f9f5f2;
   padding: 0.3rem;
-  border-radius: 10px;
+  border-radius: 50px 5px 50px 5px;
   box-shadow: 0 0 3px #666;
 }
 
 
 .card-content img {
   width: 100%;
-  border-radius: 10px 10px 0 0;
+  border-radius: 50px 0 0;
 }
 
 .card-content h3,
@@ -105,4 +129,96 @@ body {
   padding-bottom: .8rem;
   font-size: .8rem;
   font-weight: bold;
+}
+
+/* ============================================================ */
+
+/* media query */
+
+/* tablet */
+@media only screen and (max-width: 868px) {
+  .container {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin: 5.5rem auto 2rem;
+  }
+
+  .container .hero h1 {
+    font-size: 2rem
+  }
+
+  .container .hero p,
+  .container .hero .btn {
+    font-size: 1rem;
+    margin-top: .8rem;
+  }
+
+  .container .hero {
+    margin: auto;
+    padding: 0 20px;
+  }
+
+  .container .hero .socials {
+    margin-top: 1rem;
+    margin: auto;
+  }
+
+  .card-content {
+    margin: .5rem auto 2rem;
+  }
+
+}
+
+/* mobile */
+@media only screen and (max-width: 456px) {
+  body {
+    background:  #5e7c60;
+  }
+
+  .container {
+    background-color: #5e7c60;
+    margin: 4rem auto 0;
+    width: 350px;
+    padding: 0;
+    box-shadow: none;
+  }
+
+  .container .hero {
+    width: 300px;
+    padding: 1rem 2rem; 
+  }
+
+  .container .hero h1 {
+    font-size: 1.5rem;
+    line-height: 1.2;
+  }
+
+  .container .hero p,
+  .container .hero .btn {
+    font-size: .7rem;
+    margin-top: .6rem;
+  }
+
+  .container .hero a {
+    font-size: .5rem;
+  }
+
+ .container .hero .socials a {
+    font-size: 1rem;
+    padding: .2rem;
+  }
+
+  .card-content {
+    width: 70%;
+  }
+  
+  .card-content h3 {
+    font-size: .8rem;
+  }
+
+  .card-content p {
+    font-size: .7rem;
+  }
+
 }

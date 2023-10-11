@@ -1,0 +1,142 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  background-color: #f9f5f2;
+  font-family: "poppins", sans-serif;
+  background: url(/img/bg.jpg);
+}
+
+/* #5e7c60 */
+/* #f9f5f2 */
+
+.container {
+  /* margin: 7rem 0 0; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 7rem;
+}
+
+h1 span {
+  color: #5e7c60;
+  text-shadow:  0 0 1px yellow;
+}
+
+h2 {
+  text-align: center;
+  margin: 3rem 0 2rem;
+}
+
+
+.rating .rating-btn {
+  padding: .3rem 1.3rem;
+  background-color: #000;
+  color: #fff;
+  margin: 10px;
+  border-radius: 4px;
+  display: inline-block;
+  transition: .2s;
+  cursor: pointer;
+}
+
+.rating .rating-btn:hover {
+  transform: scale(1.1);
+}
+
+.testimonials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.testimonial {
+  width: 25%;
+  margin: 0px 15px 30px 15px;
+  padding: 8px;
+  background-color: #5e7c60 ;
+  border-radius: 50px 0 50px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial img {
+  object-fit: cover;
+  border-radius: 50px 0 0 0;
+  aspect-ratio: 4/3;
+}
+
+.quote {
+  color: #f9f5f2 ;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  padding: .8rem;
+}
+
+.author,
+.rating {
+  color: #f9f5f2 ;
+  padding: .2rem;
+  font-weight: bold;
+  text-align: right;
+}
+
+.rating  {
+  padding-bottom: 1.2rem;
+  padding-right: 1rem;
+  color: orange;
+}
+
+.profile-testimonial {
+  width: 100%;
+}
+
+.container-rating {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+@media only screen and (max-width: 900px) {
+  .testimonial {
+      width: 40%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .testimonial {
+      width: 100%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  #barsmenu {
+      display: block;
+  }
+
+
+  .item-collapse {
+      display: none;
+  }
+
+  .hamburger {
+      flex: 1;
+      display: flex;
+      margin-right: 30px;
+      align-items: center;
+      justify-content: flex-end;
+  }
+}
+

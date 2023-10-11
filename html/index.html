@@ -28,27 +28,50 @@
   <body>
     <!-- Navbar start -->
     <nav>
+      <img src="/img/icon.ico" alt="icon" />
       <div class="nav-left">
-        <img src="/img/red bull ico.png" alt="icon" />
         <ul>
           <li>
-            <a href="">Home</a>
+            <a href="/html/index.html">Home</a>
           </li>
           <li>
             <a href="/html/project.html">My Project</a>
           </li>
+          <li>
+            <a href="/html/testimonials.html">Testimonials</a>
+          </li>
         </ul>
+
+        <div class="nav-rigth">
+          <a href="/html/contact.html" class="btn-contact">contact</a>
+        </div>
       </div>
 
-      <div class="nav-rigth">
-        <a href="/html/contact.html"><button>contact</button></a>
+      <div class="bars-menu" id="bars-menu">
+        <button class="btn-bars-menu" id="bars-menu"><i class="fa-solid fa-bars"></i></button>
+      </div>
+
+      <div class="sidebar-menu">
+        <ul>
+          <li><a href="/html/index.html">Home</a></li>
+          <li><a href="/html/project.html">My Project</a></li>
+          <li><a href="/html/contact.html">Contact</a></li>
+          <li><a href="/html/testimonials.html">Testimonials</a></li>
+        </ul>
       </div>
     </nav>
+
     <!-- Navbar end -->
 
     <div class="container">
       <div class="hero">
-        <h1>Hi Welcome <span>to my hut</span></h1>
+        <span class="blur"></span>
+        <span class="blur"></span>
+        <span>welcome to my personal website 👋</span>
+        <h1>
+          Hi. I'm <span class="judul">Tajul</span>, <br />
+          Web Developer
+        </h1>
         <p>Hello, my name is Tajul Subqi, I am 23 years old and come from Aceh. Currently, I am taking part in a bootcamp training program at DumbWays to improve my skills and get a promising career in the professional world.</p>
         <button class="btn">contact</button>
         <p>
@@ -70,5 +93,7 @@
       </div>
     </div>
     <script src="../darkmode.js"></script>
+    <script src="/js/navbar.js"></script>
+    <script src="/js/index.js"></script>
   </body>
 </html>
