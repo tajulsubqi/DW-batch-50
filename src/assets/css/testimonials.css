@@ -6,34 +6,41 @@
 }
 
 body {
-  background-color: #f9f5f2;
-  font-family: "poppins", sans-serif;
-  background: url(/img/bg.jpg);
+  background-color:#e2edff;
+  padding-top: 5rem;
 }
 
-/* #5e7c60 */
-/* #f9f5f2 */
-
-.container {
-  /* margin: 7rem 0 0; */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.nav-btn {
+  background-color: #e2edff;
+  color: #000;
+  font-weight: bold;
+  
 }
 
-h1 {
+.nav-btn:hover {
+  background-color: #dedede;
+}
+
+.nav-link {
+  color: #fff;
+  display: block;
+  transition: .3s;
+}
+
+.nav-link:hover {
+  transform: scale(1.1);
+}
+
+
+.testimonials h1 {
   text-align: center;
-  margin-top: 7rem;
+  font-weight: bold;
+  font-style: italic;
 }
 
 h1 span {
-  color: #5e7c60;
-  text-shadow:  0 0 1px yellow;
-}
-
-h2 {
-  text-align: center;
-  margin: 3rem 0 2rem;
+  color: #0099FF;
+  text-shadow:  0 0 1px #000;
 }
 
 
@@ -55,18 +62,18 @@ h2 {
 .testimonials {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: center; 
   margin-top: 2rem;
-  width: 100%;
 }
 
+
 .testimonial {
-  width: 25%;
+  padding-top: 10px;
+  width: 300px;
   margin: 0px 15px 30px 15px;
-  padding: 8px;
-  background-color: #5e7c60 ;
+  background-color: #eee;
   border-radius: 50px 0 50px 0;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 5px #000;
 }
 
 .testimonial img {
@@ -76,7 +83,7 @@ h2 {
 }
 
 .quote {
-  color: #f9f5f2 ;
+  color: #000 ;
   font-size: 16px;
   font-style: italic;
   line-height: 1.5;
@@ -86,14 +93,13 @@ h2 {
 
 .author,
 .rating {
-  color: #f9f5f2 ;
+  color: #000 ;
   padding: .2rem;
   font-weight: bold;
   text-align: right;
 }
 
 .rating  {
-  padding-bottom: 1.2rem;
   padding-right: 1rem;
   color: orange;
 }
@@ -139,4 +145,3 @@ h2 {
       justify-content: flex-end;
   }
 }
-

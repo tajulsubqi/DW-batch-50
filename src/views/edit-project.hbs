@@ -1,0 +1,122 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image" href="/img/icon.ico" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="/css/project.css" />
+
+    <title>Add My Project</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm py-md-1 fixed-top">
+      <div class="container">
+        <a class="navbar-brand pe-3" href="#"><img src="/img/icon.ico" alt="icon" width="50" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item pe-3">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item pe-3">
+              <a class="nav-link text-white" href="/add-project">My Project</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="/testimonials">Testimonials</a>
+            </li>
+          </ul>
+          <a href="/contact" class="nav-btn btn px-2 py-1 text-dark">Contact</a>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar end -->
+
+    <!-- Add My Project Section -->
+    <section id="project">
+      <div class="container-fluid row col-7 mt-5 mx-auto py-5" id="container-project">
+        <h1 class="text-center mb-5 fw-bold fst-italic">Add My <span>Project</span></h1>
+        <form class="w-75 mx-auto" method="post" action="/edit-project/{{id}}">
+          <!-- Project Name -->
+          <div class="mb-3">
+            <label for="project" class="form-label fw-bold">Project Name</label>
+            <input type="text" name="project" class="form-control py-2" id="project" value="{{add-project.project}}" aria-describedby="emailHelp" />
+          </div>
+
+          <!-- Start and End Dates -->
+          <div class="d-flex justify-content-between">
+            <div class="mb-3 w-50 pe-2">
+              <label for="startDate" class="form-label fw-bold">Start date</label>
+              <input type="date" name="startDate" class="form-control py-2" id="startDate" />
+            </div>
+            <div class="mb-3 w-50 ps-2">
+              <label for="endDate" class="form-label fw-bold">End date</label>
+              <input type="date" name="endDate" class="form-control py-2" id="endDate" />
+            </div>
+          </div>
+
+          <!-- Description -->
+          <div class="mb-3">
+            <label for="description" class="form-label fw-bold">Description</label>
+            <div class="form-floating">
+              <textarea style="height: 10rem; resize: none" class="form-control" placeholder="Leave a comment here" name="description" id="description" value="{{add-blog.description}}"></textarea>
+            </div>
+          </div>
+
+          <!-- Technologies -->
+          <label for="technologies" class="form-label fw-bold mb-3">Technologies</label>
+          <div class="mb-3 d-flex justify-content-evenly">
+            <div>
+              <div class="form-check mb-2">
+                <input class="form-check-input" name="javaScript" value="javaScript" type="checkbox" id="javaScript" />
+                <label class="form-check-label" for="javaScript"> Java Script </label>
+              </div>
+
+              <div class="form-check mb-2">
+                <input class="form-check-input" name="reactJs" value="reactJs" type="checkbox" id="reactJs" />
+                <label class="form-check-label" for="reactJs">React Js</label>
+              </div>
+            </div>
+
+            <div>
+              <div class="form-check mb-2">
+                <input class="form-check-input" name="nodeJs" value="nodeJs" type="checkbox" id="nodeJs" />
+                <label class="form-check-label" for="nodeJs">Node Js</label>
+              </div>
+
+              <div class="form-check mb-2">
+                <input class="form-check-input" name="golang" value="golang" type="checkbox" id="golang" />
+                <label class="form-check-label" for="golang">Golang</label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Upload Images -->
+          <label for="uploadImage" class="form-label fw-bold mb-3">Upload Images</label>
+          <div class="input-group mb-4">
+            <input type="file" name="uploadImage" class="form-control py-2" id="uploadImage" aria-describedby="inputGroupFileAddon04" aria-label="Upload" />
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="btn btn-primary px-3 py-1 d-flex justify-content-end">Submit</button>
+        </form>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path
+          fill="#ffffff"
+          fill-opacity="1"
+          d="M0,256L60,256C120,256,240,256,360,224C480,192,600,128,720,112C840,96,960,128,1080,122.7C1200,117,1320,75,1380,53.3L1440,32L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+        ></path></svg>
+    </section>
+    <!-- Add My Project Section end -->
+
+    <!-- Bootstrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color:  #e2edff;
+  color: #000;
+  padding-top: 3rem;
+}
+
+.nav-btn {
+  background-color: #e2edff;
+  color: #000;
+  font-weight: bold;
+}
+
+.nav-btn:hover {
+  background-color: #dedede;
+}
+
+.nav-link {
+  color: #fff;
+  display: block;
+  transition: .3s;
+}
+
+.nav-link:hover {
+  transform: scale(1.1);
+}
+
+#container-contact h1 {
+  color: #000;
+}
+
+#container-contact span {
+  color: #0099FF;
+  text-shadow: 0 0 1px #000;
+}

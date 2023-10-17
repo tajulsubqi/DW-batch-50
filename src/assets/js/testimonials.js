@@ -45,45 +45,50 @@ let dataTestiomonial = [
 ];
 
 function showTestimonial() {
-  let testimonialForHtml = ""
+  let testimonialForHtml = "";
 
-  dataTestiomonial.forEach(item => {
+  dataTestiomonial.forEach((item) => {
     testimonialForHtml += `
-      <div class="testimonial">
+      <div class="testimonial mt-3 row ">
+      <div class="container col">
+      <div class="col ">  
         <img src=${item.image} class="profile-testimonial" />
         <p class="quote">${item.quote}</p>
         <p class="author">~ ${item.author}</p>
         <p class="rating"> ${item.rating}<i class="fa-solid fa-star"></i></p>
       </div>
-    `
-  })
+      </div>
+      </div>
+    `;
+  });
 
-  document.getElementById("testimonials").innerHTML = testimonialForHtml
+  document.getElementById("testimonials").innerHTML = testimonialForHtml;
 }
-showTestimonial()
-
+showTestimonial();
 
 // function for filtering
 function filterTestimonials(rating) {
-  let testimonialForHtml = ""
+  let testimonialForHtml = "";
 
-  const dataFiltered = dataTestiomonial.filter(data => data.rating === rating)
+  const dataFiltered = dataTestiomonial.filter((data) => data.rating === rating);
   console.log(dataFiltered);
 
-  if(dataFiltered.length === 0) {
-    testimonialForHtml = `<h3>Data not found !</h3>`
+  if (dataFiltered.length === 0) {
+    testimonialForHtml = `<h3>Data not found !</h3>`;
   } else {
-    dataFiltered.forEach(item => {
+    dataFiltered.forEach((item) => {
       testimonialForHtml += `
-        <div class="testimonial">
-          <img src=${item.image} class="profile-testimonial" />
-          <p class="quote">${item.quote}</p>
-          <p class="author">~ ${item.author}</p>
-          <p class="rating"> ${item.rating} <i class="fa-solid fa-star"></i></p>
-        </div>
-      `
-    })
+      <div class="testimonial mt-3 row">
+      <div class="col-8">  
+        <img src=${item.image} class="profile-testimonial" />
+        <p class="quote">${item.quote}</p>
+        <p class="author">~ ${item.author}</p>
+        <p class="rating"> ${item.rating}<i class="fa-solid fa-star"></i></p>
+      </div>
+    </div>
+      `;
+    });
   }
 
-  document.getElementById("testimonials").innerHTML = testimonialForHtml
+  document.getElementById("testimonials").innerHTML = testimonialForHtml;
 }
